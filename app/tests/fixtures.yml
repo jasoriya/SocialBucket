@@ -1,0 +1,13 @@
+SocialBucket\Users\User:
+  username: $string
+  email: $string@example.com
+  password: $string
+  created_at: $date
+  updated_at: $date
+
+SocialBucket\Statuses\Status:
+  user_id:
+    type: SocialBucket\Users\User
+  body: $text
+  create_at: $date
+  updated_at: $date
